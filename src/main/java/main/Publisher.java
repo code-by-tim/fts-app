@@ -38,7 +38,8 @@ public class Publisher {
                 broker.publish(knowledge);
                 System.out.println("Publisher: Dokument ver\u00f6ffentlicht!");
             } catch (Exception e) {
-                System.out.println("Publisher: Dokument konnte nicht ver\u00f6ffentlicht werden.");
+                System.out.println("Publisher: Dokument konnte nicht ver\u00f6ffentlicht werden. Grund:");
+                System.out.println(e.getMessage());
             }
         } else {
             // Catch wrong inputs
