@@ -52,8 +52,8 @@ public class MainMenu {
     private void printMainMenu() {
         System.out.println("Was wollen Sie tun?");
         System.out.println("TASTE\tAKTION");
-        System.out.println("[1]\t\tFTS-Informationen ver\u00f6ffentlichen");
-        System.out.println("[2]\t\tKnowledge Base anschauen");
-        System.out.println("[3]\t\tApplikation beenden");
+        System.out.println("[1]\tFTS-Informationen ver\u00f6ffentlichen");
+        System.out.println("[2]\tKnowledge Base anschauen");
+        System.out.println("[3]\tApplikation beenden");
     }
 }

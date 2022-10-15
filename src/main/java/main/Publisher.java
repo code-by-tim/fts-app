@@ -40,6 +40,7 @@ public class Publisher {
             } catch (Exception e) {
                 System.out.println("Publisher: Dokument konnte nicht ver\u00f6ffentlicht werden. Grund:");
                 System.out.println(e.getMessage());
+                System.out.println("Starten Sie zuerst den Server und dann diese App erneut!");
             }
         } else {
             // Catch wrong inputs
