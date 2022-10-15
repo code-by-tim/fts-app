@@ -27,7 +27,7 @@ public class KnowledgeBase {
     public void browseKnowledgeBase() {
         System.out.println("Betrete Knowledge Base...");
         if (knowledgeBase.size()>0) {
-            System.out.println("KnowledgeBase: Es wurde(n) " + knowledgeBase.size() + " Update(s) empfangen. Welches davon möchten Sie sehen?");
+            System.out.println("KnowledgeBase: Es wurde(n) " + knowledgeBase.size() + " Update(s) empfangen. Welches davon m\u00f6chten Sie sehen?");
             System.out.println("KnowledgeBase: (Gebe eine Nummer zwischen 1 und " + knowledgeBase.size() + " ein)");
             String input = scanner.nextLine();
             try {
@@ -36,7 +36,7 @@ public class KnowledgeBase {
                     System.out.println("Das war Update Nr. " + enteredNumber + ":");
                     System.out.println(knowledgeBase.get(enteredNumber - 1));
                 } else {
-                    System.out.println("KnowledgeBase: Die Nummer befindet sich nicht im gültigen Bereich. Bitte versuche es erneut!");
+                    System.out.println("KnowledgeBase: Die Nummer befindet sich nicht im g\u00fcltigen Bereich. Bitte versuche es erneut!");
                 }
             } catch (NumberFormatException e) {
                 System.out.println("KnowledgeBase: Nur Zahlen werden akzeptiert. Bitte versuchen Sie es erneut!");

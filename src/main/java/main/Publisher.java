@@ -28,7 +28,7 @@ public class Publisher {
         filepath = this.removeQuotationMarks(filepath); //When copying the filepath in Windows there might be quotation marks
         // Validate Filepath
         if (this.isValidPath(filepath)) {
-            System.out.println("Publisher: Veröffentliche Dokument...");
+            System.out.println("Publisher: Ver\u00f6ffentliche Dokument...");
             try {
                 // Validate XML File against XSD
                 if (!XMLHandler.validateXMLFile(filepath)) throw new Exception();
@@ -36,14 +36,14 @@ public class Publisher {
                 // Transform XML-Document to string and publish it
                 String knowledge = XMLHandler.xmlToString(filepath);
                 broker.publish(knowledge);
-                System.out.println("Publisher: Dokument veröffentlicht!");
+                System.out.println("Publisher: Dokument ver\u00f6ffentlicht!");
             } catch (Exception e) {
-                System.out.println("Publisher: Dokument konnte nicht veröffentlicht werden.");
+                System.out.println("Publisher: Dokument konnte nicht ver\u00f6ffentlicht werden.");
             }
         } else {
             // Catch wrong inputs
             System.out.println(filepath);
-            System.out.println("ist kein gültiger Dateipfad zu einer XML-Datei!");
+            System.out.println("ist kein g\u00fcltiger Dateipfad zu einer XML-Datei!");
         }
     }
 

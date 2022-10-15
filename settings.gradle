@@ -1,2 +1,3 @@
-rootProject.name = 'fts-app'
+rootProject.name = 'FTSApp'
+include("fts-app")
 
